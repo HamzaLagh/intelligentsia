@@ -1,0 +1,16 @@
+.contNav{
+    background-color:white;
+    height: 50px;
+    color: #0099DD;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    font-weight: 600;
+  }
+  .contNav ul li a{
+    color: #0099DD;
+    transition: .1s;
+  }
+  .contNav ul li a:hover{
+    border-bottom: 2px solid #0099DD;
+  }

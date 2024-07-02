@@ -1,0 +1,306 @@
+
+
+/* contDemandes---------- */
+.contDemandes{
+    background-color: #e7edf2;
+    font-family: 'PreplyInterV', 'PreplyInter', 'PreplyInter-Fallback', sans-serif;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+  a, a:visited{
+    /* outline:none; */
+    color:#389dc1;
+  }
+  
+  a:hover{
+    text-decoration:none;
+  }
+  section, footer, header, aside, nav{
+    display:block;
+  }
+  
+  nav{
+    display:inline-block;
+    background-color:#5597b4;
+    box-shadow:0 1px 1px #ccc;
+    border-radius:2px;
+  }
+  
+  nav .item-menu {
+    display:inline-block;
+    padding:16px 18px;
+    color:#fff !important;
+    font-weight:bold;
+    font-size:14px;
+    text-decoration:none !important;
+    /* line-height:1; */
+    text-transform:uppercase;
+    background-color:transparent;
+      -webkit-transition:background-color 0.25s;
+      -moz-transition:background-color 0.25s;
+      transition:background-color 0.25s;
+    
+  }
+  nav .active{
+    background-color: #7d9098;
+  
+  }
+  nav a:hover{
+    background-color: #7d9098;
+  }
+  
+  nav a:first-child{
+    border-radius:2px 0 0 2px;
+  }
+  nav a:last-child{
+    border-radius:0 2px 2px o;
+  }
+  
+  p{
+    font-size:22px;
+    font-weight:bold;
+    color:#7d9098;
+  }
+  p b{
+      color:#ffffff;
+      display:inline-block;
+      padding:5px 10px;
+      background-color:#c4d7e0;
+      border-radius:2px;
+      text-transform:uppercase;
+      font-size:18px;
+  }
+
+
+
+
+  /* --------------------cours */
+
+.styles_Avatar {
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code, del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, legend, label {
+    border: 0;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.SearchCardHeadingBadges {
+    align-items: center;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.styles_FullName__abIcx {
+    color: #384047;
+    display: inline;
+    font-size: var(--c7d482);
+    font-weight: 700;
+    line-height: 1.42857143;
+    margin-right: 8px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.StatsItem {
+    align-items: baseline;
+    display: inline-flex;
+    font-size: var(--8d63e4);
+    font-weight: var(--d1c480);
+}
+
+
+.styles_Speaks___w8uF {
+    align-items: baseline;
+    -moz-column-gap: var(--1ba55a);
+    column-gap: var(--1ba55a);
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style: none;
+    row-gap: var(--6947b0);
+}
+
+div, span, object, iframe, img, table, caption, thead, tbody, tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu, nav, footer, header, section, summary, mark, audio, video {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* -----voir plus--- */
+.voirPlus {
+    --lines-limit: 4;
+    max-height: calc(var(--lines-limit)*1.38462*13px);
+} 
+
+.SnippetContent{
+    font-size: 13px;
+    height: auto;
+    line-height: 1.38461538;
+    overflow: hidden;
+    position: relative;
+    transition: max-height .1s;
+}
+
+
+
+
+
+
+
+/* nejma----- */
+
+
+
+
+    .rating-group {
+      display: inline-flex;
+    }
+    
+    .rating__icon {
+      pointer-events: none;
+    }
+    
+    /* hide radio inputs */
+    .rating__input {
+     position: absolute !important;
+     left: -9999px !important;
+    }
+    /* set icon padding and size */
+    .rating__label {
+      cursor: pointer;
+      padding: 0 0.1em;
+      font-size: 2rem;
+    }
+    
+    /* set default star color */
+    .rating__icon--star {
+      color: orange;
+    }
+    
+    /* set color of none icon when unchecked */
+    .rating__icon--none {
+      color: #eee;
+    }
+  
+    /* if none icon is checked, make it red */
+    .rating__input--none:checked + .rating__label .rating__icon--none {
+      color: red;
+    }
+  
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+  
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star {
+      color: orange;
+    }
+  
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make none icon grey on rating group hover */
+    .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+       color: #eee;
+    }
+  
+    /* make none icon red on hover */
+    .rating__input--none:hover + .rating__label .rating__icon--none {
+      color: red;
+    }
+  
+  
+  #half-stars-example 
+  
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    .rating-group {
+      display: inline-flex;
+    }
+    
+    /* make hover effect work properly in IE */
+    .rating__icon {
+      pointer-events: none;
+    }
+    
+    /* hide radio inputs */
+    .rating__input {
+     position: absolute !important;
+     left: -9999px !important;
+    }
+  
+    /* set icon padding and size */
+    .rating__label {
+      cursor: pointer;
+      /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+      padding: 0 0.1em;
+      font-size: 2rem;
+    }
+  
+    /* add padding and positioning to half star labels */
+    .rating__label--half {
+      padding-right: 0;
+      margin-right: -0.6em;
+      z-index: 2;
+    }
+    
+    /* set default star color */
+    .rating__icon--star {
+      color: orange;
+    }
+    
+    /* set color of none icon when unchecked */
+    .rating__icon--none {
+      color: #eee;
+    }
+  
+    /* if none icon is checked, make it red */
+    .rating__input--none:checked + .rating__label .rating__icon--none {
+      color: red;
+    }
+  
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star,
+    .rating-group:hover .rating__label--half .rating__icon--star {
+      color: orange;
+    }
+  
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover ~ .rating__label .rating__icon--star,
+    .rating__input:hover ~ .rating__label--half .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make none icon grey on rating group hover */
+    .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+       color: #eee;
+    }
+  
+    /* make none icon red on hover */
+    .rating__input--none:hover + .rating__label .rating__icon--none {
+      color: red;
+    }
+  
+
+    
+  

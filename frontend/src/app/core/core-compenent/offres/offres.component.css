@@ -1,0 +1,151 @@
+.contOffre{
+    width: 65%;
+    height: 400px;
+    margin-top: 200px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    /* padding-bottom:30px; */
+    /* padding-top:30px ; */
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    /* background-image: url(../../../../assets/images/monde-travail.jpeg); */
+}
+.imgOffre{
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.5;
+    z-index: 1;
+}
+.contGrand{
+    border-radius: 10px;
+    color: black;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contDemandes .contPetit
+{
+    cursor: pointer;
+    border-bottom: 0.01px solid black;
+    background-color:#adadad20;
+}
+.contDemandes .contPetit:hover
+{
+    background-color: white;
+    /* border: 1px solid ; */
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.contDemandes .contPetit .col
+{
+        /* background-color: blueviolet; */
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+}
+
+.imgProfil img
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.contDemandes h6 a 
+{
+    font-size: smaller;
+    text-decoration: none;
+    color: black;
+}
+.contDemandes h6 a:hover 
+{
+    text-decoration: underline rgb(36, 118, 207);
+    color: rgb(64, 59, 59);
+}
+
+.contNav{
+    background-color: rgba(23, 70, 198, 0.756);
+    height: 50px;
+    top: 0;
+    width: 100%;
+    color: aliceblue;
+}
+.contNav ul li a{
+    color: aliceblue;
+    transition: .1s;
+}
+.contNav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+form{
+    width: 93%;
+    margin-left: 35px;
+}
+ .contFilter{
+    width: 500px;
+    margin: 10px auto;
+    display: flex;
+    border-radius: 10px;    
+}
+
+select {
+    padding: 12px  12px;
+    /* background-color: #0099DD; */
+    background-color:  white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    /* justify-content: space-between; */
+    color: black;
+    /* text-align: center; */
+    font-size: 15px;
+    border-radius: 15px;
+
+}
+
+/* select:hover{
+    background-color: #167ca820;
+} */
+
+
+option{
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:15px 10px;
+    cursor: pointer;
+    background-color:  white;
+    border-radius: 8px;
+    transition: .4s;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.5);
+    color: black;
+
+}
+input{
+    padding: 10px 40px 10px 10px;
+    text-align: start;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color:  white;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+}
+input[type=button]{
+    background-color: #167ca850;
+}
+
+/* option,input:hover{
+    background-color: #42484a20;
+} */
+.contLink{
+    margin-left: 265px;
+}
+.contLink a {
+    color: rgb(74, 72, 72);
+    text-decoration:none ;
+}
+ .contLink a:hover {
+    color: black;
+    text-decoration: underline;
+}

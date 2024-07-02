@@ -1,0 +1,168 @@
+<app-top-header></app-top-header>
+<div
+  style="top: 50px; position: fixed; display: block; width: 100%; z-index: 100"
+>
+  <app-header></app-header>
+</div>
+
+<div class="container position-relative w-100 contDemandes">
+  <div class="row w-100 bg-light p-3 contPetit">
+    <div class="col-2">
+      <div class="imgProfil mx-auto">
+        <img [src]="logoEntreprise" />
+      </div>
+    </div>
+
+    <div class="col-10 position-relative" style="height: 300px">
+      <h5 style="color: #103778; width: auto">{{ jobOffer.titre }}</h5>
+      <div class="row mt-4" style="width: 950px">
+        <div class="col">
+          <label for="">Expérience :</label>
+          <h6 class="bg-white p-2 text-center" style="width: 60%">
+            {{ jobOffer.experience }}
+          </h6>
+        </div>
+        <div class="col">
+          <label for="">Région :</label>
+          <h6 class="bg-white p-2 text-center ms-5" style="width: 55%">
+            {{ jobOffer.region }}
+          </h6>
+        </div>
+        <!--  <div class="col">
+                        <label for="">Durée :</label>
+                        <h6 class="bg-white p-2 text-center ms-5" style="width: 40%;"> 6 mois</h6>
+                    </div>-->
+        <div class="col">
+          <label for="">Niveau d'étude :</label>
+          <h6 class="bg-white p-2 text-center ms-5">
+            {{ jobOffer.niveauEtude }}
+          </h6>
+        </div>
+        <div class="col">
+          <label for="">Formation :</label>
+          <h6 class="bg-white p-2 text-center ms-5" style="width: 90%">
+            {{ jobOffer.fonction }}
+          </h6>
+        </div>
+      </div>
+
+      <div class="row" style="width: 100%; margin-top: 20px">
+        <div class="col">
+          <h6 class=""><i class="fa fa-check"></i> Respect des règles</h6>
+        </div>
+        <div class="col">
+          <h6 class=""><i class="fa fa-check"></i> Distance émotionnelle</h6>
+        </div>
+        <div class="col">
+          <h6 class=""><i class="fa fa-check"></i> Flexibilité</h6>
+        </div>
+        <div class="col">
+          <h6 class=""><i class="fa fa-check"></i> Besoin d'action</h6>
+        </div>
+        <div class="col">
+          <h6 class=""><i class="fa fa-check"></i> Travail en équipe</h6>
+        </div>
+        <div class="col">
+          <h6 class=""><i class="fa fa-check"></i> Implication au travail</h6>
+        </div>
+        <div class="col">
+          <h6 class=""><i class="fa fa-check"></i> Organisation</h6>
+        </div>
+      </div>
+
+      <div
+        class="row position-absolute bottom-0 start-0"
+        style="width: 350px; margin-top: 50px"
+      >
+        <div class="col">
+          <label for="">Type de contrat :</label>
+          <h6 class="bg-white p-2">Contrat {{ jobOffer.typeContrat }}</h6>
+        </div>
+
+        <div class="col">
+          <label for="">Type de travail :</label>
+          <h6 class="bg-white p-2">{{ jobOffer.typeDeTravail }}</h6>
+        </div>
+      </div>
+
+      <div
+        class="position-absolute bottom-0 end-0 p-2"
+        style="color: aliceblue; background-color: gray; border-radius: 5px"
+      >
+        <h6>
+          <i class="fa fa-calendar" aria-hidden="true"></i> Publiée aujourd'hui-
+          Postulez avant le {{ jobOffer.dateLimite }}
+        </h6>
+      </div>
+    </div>
+  </div>
+  <!-- ----------------fin containerPetit------------- -->
+  <div class="col-12 mt-5 ms-5">
+    <h6>Entreprise :</h6>
+    <p class="ms-3">
+      Une société recrute, sur la ville de Casablanca, un/une contrôleur de
+      gestion
+    </p>
+  </div>
+  <div class="col-12 mt-5 ms-5">
+    <h6>Poste :</h6>
+    <ul>
+      <li>
+        Elaborer et d’adapter en permanence les outils d’analyse, les
+        indicateurs et les procédures de contrôle.
+      </li>
+      <li>
+        Suivre l’activité en collectant les informations auprès des managers
+        opérationnels
+      </li>
+      <li>
+        Identifier les écarts significatifs entre les réalisations et les
+        prévisions, les commenter et assurer la retransmission des informations
+        à votre hiérarchie.
+      </li>
+      <li>Analyser les demandes portant sur investissements</li>
+      <li>Participer au reporting mensuel des activités de l'entreprise</li>
+      <li>Evaluer les pratiques de contrôle interne</li>
+      <li>Contribuer à la gestion et à la communication des procédures.</li>
+      <li>Fixer les objectifs et le périmètre des missions d’audit.</li>
+      <li>
+        Conduire les entretiens et réaliser les recherches nécessaires auprès
+        des audités.
+      </li>
+      <li>
+        Analyser les résultats des recherches et rédiger les rapports d’audit.
+      </li>
+      <li>
+        Communiquer sur le déroulement des missions avec votre responsable ainsi
+        qu’avec les responsables des entités auditées.
+      </li>
+      <li>
+        S’assurer de la mise en place des recommandations en lien avec toutes
+        les parties prenantes.
+      </li>
+    </ul>
+  </div>
+  <div class="col-12 mt-5 ms-5">
+    <h6>Profil recherché :</h6>
+    <p class="ms-3">
+      De formation supérieure en gestion / Audit / CG, vous bénéficier d’une
+      expérience de deux années en tant que contrôleur de gestion / auditeur.
+      Vous maîtrisez les outils informatiques de gestion. ( Une connaissance de
+      L’ERP SAP serai un plus ) Vos capacités d’écoute, d’analyse et de synthèse
+      vous permettront de réussir à ce poste.
+    </p>
+  </div>
+
+  <div class="col-12 mt-5 ms-5 text-center" style="margin-bottom: 200px">
+    <button
+      (click)="onSubmit()"
+      [disabled]="isDisabled"
+      type="submit"
+      class="btn btn-primary py-3 px-5"
+    >
+      Postuler
+    </button>
+  </div>
+</div>
+
+<app-footer></app-footer>

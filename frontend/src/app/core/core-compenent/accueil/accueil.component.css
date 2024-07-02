@@ -1,0 +1,470 @@
+
+/* -------------Recherche d'emploi (filter)----- */
+form{
+    width: 93%;
+    margin-left: 35px;
+}
+ .contFilter{
+    width: 500px;
+    margin: 10px auto;
+    display: flex;
+    
+}
+
+select {
+    padding: 12px  12px;
+    /* background-color: #0099DD; */
+    background-color:  white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    /* justify-content: space-between; */
+    color: black;
+    /* text-align: center; */
+    font-size: 15px;
+    border-radius: 15px;
+
+}
+
+select:hover{
+    background-color: #167ca820;
+}
+
+
+option{
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:15px 10px;
+    cursor: pointer;
+    background-color:  white;
+    border-radius: 8px;
+    transition: .4s;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.5);
+    color: black;
+
+}
+input{
+    padding: 10px 40px 10px 10px;
+    text-align: start;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color:  white;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+}
+input[type=button]{
+    background-color: #167ca850;
+}
+
+option,input:hover{
+    background-color: #167ca820;
+
+}
+
+/* -------------------------Les entreprise de semaine------ */
+section {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.grand .top-compnay {
+    height: auto !important;
+    min-height: 360px;
+}
+.grand .top-compnay img {
+    max-height: 200px;
+    max-width: 530px;
+    width: auto;
+}
+.top-compnay {
+    vertical-align: middle;
+    display: inline-table;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+}
+.top-compnay:hover {
+    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1)
+}
+.top-compnay.style2 > a:hover {
+    color: #FFF
+}
+.top-compnay img {
+    vertical-align: middle;
+    max-width: 230px;
+    width: 100%;
+}
+
+.browse-all-cat {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.browse-all-cat a {
+    float: none;
+    display: inline-block;
+    border: 2px solid;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: Open Sans;
+    font-size: 17px;
+    color: #0099DD    ;
+    text-decoration: none;
+    
+}
+.browse-all-cat:hover a {
+    background-color: #0099DD;
+    color: #FFF;
+    
+}
+
+
+
+
+/* ---------------les offres trouvees------------- */
+
+.offers {
+    padding-bottom:50px
+}
+.offers .heading {
+    margin-bottom: 55px
+}
+.offers .swiper-container .swiper-wrapper {
+    padding: 30px 0 30px 25px;
+}
+.offers .swiper-container .swiper-wrapper .swiper-slide {
+    width: 340px;
+}
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.swiper-wrapper {
+    position: relative;
+    /* width: 100%; */
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+.offers .swiper-container .swiper-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offers .swiper-container .swiper-navigation .button-next.swiper-button-disabled, .offers .swiper-container .swiper-navigation .button-prev.swiper-button-disabled {
+    opacity: .4
+}
+
+.offer .offer-header {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EEE;
+}
+.offer .offer-header .offer-status {
+    width: 80px;
+    border: 1px solid #165aa2;
+    text-align: center;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.offer .offer-header .offer-status h5 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #165aa2;
+    padding-top: 7px;
+}
+.offer .offer-header h3 {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #77C7D9;
+}
+.offer .offer-header span {
+    font-size: 13px;
+    font-weight: 500;
+}
+.offer .offer-body .location {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.offer .offer-body p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    max-height: 78px;
+    height: auto;
+    overflow: hidden;
+}
+.offer .offer-body .date {
+    font-size: 12px;
+    font-weight: 500;
+    color: #a8a8a8;
+    transition: color .35s ease-in-out;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #007bff;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.offers .swiper-container .swiper-wrapper {
+    padding:0 0 30px 0
+}
+
+
+.offers .swiper-container .swiper-navigation {
+display: flex;
+justify-content: center;
+align-items: center
+}
+
+.offers .swiper-container .swiper-navigation .button-next, .offers .swiper-container .swiper-navigation .button-prev {
+outline: none
+}
+[role="button"] {
+    cursor: pointer;
+}
+
+.offers .swiper-container .swiper-navigation .button-next:focus, .offers .swiper-container .swiper-navigation .button-prev:focus {
+outline: none
+}
+
+.offers .swiper-container .swiper-navigation .button-next .fa, .offers .swiper-container .swiper-navigation .button-prev .fa {
+font-size: 40px;
+color: #165aa2
+}
+
+.offers .swiper-container .swiper-navigation .button-next.swiper-button-disabled, .offers .swiper-container .swiper-navigation .button-prev.swiper-button-disabled {
+opacity: .4
+}
+
+.offers .swiper-container .swiper-navigation .button-next {
+margin-right: 25px
+}
+
+.offer {
+    position: relative;
+    width: 100%;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    padding: 25px;
+    background-color: #FFF;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,0.1);
+    transition: all .35s ease-in-out
+}
+.offer:hover {
+    transform: translateY(-25px);
+    border: 2px solid #77C7D9;
+    box-shadow: none
+}
+.swiper-container .swiper-notification {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1000;
+}
+.offers .swiper-container .swiper-wrapper .swiper-slide {
+    width: 340px;
+}
+.offers .swiper-container .swiper-wrapper {
+    padding: 30px 0 30px 25px;
+}
+.offer .redirect-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* 
+.contNav{
+    background-color: rgba(23, 70, 198, 0.756);
+    height: 50px;
+    color: aliceblue;
+    top: 0;
+    width: 100%;
+}
+.contDemandes .contPetit
+{
+    cursor: pointer;
+    border-bottom: 0.01px solid black;
+    background-color:#adadad20;
+}
+.contDemandes .contPetit:hover
+{
+    background-color: white;
+    border: 1px solid ;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.contDemandes .contPetit .col
+{
+        background-color: blueviolet;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+}
+
+.imgProfil img
+{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.contDemandes h6 a
+{
+    font-size: smaller;
+    text-decoration: none;
+    color: black;
+}
+.contDemandes h6 a:hover
+{
+    text-decoration: underline rgb(36, 118, 207);
+    color: rgb(64, 59, 59);
+}
+.contNav ul li a{
+    color: aliceblue;
+    transition: .1s;
+}
+.contNav ul li a:hover{
+    border-bottom: 2px solid white;
+} */
+
+
+
+/* ------------------pourquoi intellengetsia */
+#services {
+    background-color: #eee;
+    padding: 40px;
+}
+#services .service {
+    margin-top: 40px;
+    text-align: center
+}
+
+#services .service .title {
+    color: #333;
+    font-family: work-sans,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 10px
+}
+
+#services .service .description {
+    color: #696969;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px
+}
+
+#services .service .link {
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 15px
+}
+
+.section-title {
+    color: #333;
+    font-family: work-sans,Arial,sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 0;
+    text-align: center
+}
+
+.section-description {
+    color: #696969;
+    margin-top: 10px;
+    text-align: center
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+img {
+    border-style: none
+}
+
+img,svg {
+    vertical-align: middle
+}
+
+svg {
+    overflow: hidden
+}
+a {
+    background-color: transparent;
+    color:#0099DD;
+    text-decoration: none;
+}
+a:hover {
+    color: #0099DD;
+    text-decoration: underline
+}

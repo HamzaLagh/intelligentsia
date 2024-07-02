@@ -1,0 +1,101 @@
+<app-top-header></app-top-header>
+<div
+  style="top: 50px; position: fixed; display: block; width: 100%; z-index: 100"
+>
+  <app-header></app-header>
+</div>
+<section style="margin-top: 150px">
+  <div class="container mb-5">
+    <h1 class="user-contact-title my-4 text-center">
+      Vous voulez nous envoyer un message ?
+    </h1>
+    <div class="user-contact-summary text-center my-4">
+      Utilisez le formulaire ci-dessous pour être recontacté.
+    </div>
+    <div class="col-12 col-md-7 m-auto py-4 card user-contact-card">
+      <div class="row">
+        <div class="col-md-9 m-auto">
+          <form name="user_form" method="post" action="/fr/contact">
+            <div class="row">
+              <div class="col-lg-12 mb-3">
+                <label class="contact-input-label">Email*</label>
+                <input
+                  type="text"
+                  id="user_form_email"
+                  name="user_form[email]"
+                  required="required"
+                  class="form-control user-contact-input"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 mb-3">
+                <label class="contact-input-label">Sujet*</label>
+                <input
+                  type="text"
+                  id="user_form_subject"
+                  name="user_form[subject]"
+                  required="required"
+                  class="form-control user-contact-input"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12 mb-3">
+                <label class="contact-input-label">Message*</label>
+                <textarea
+                  id="user_form_message"
+                  name="user_form[message]"
+                  required="required"
+                  class="form-control user-contact-input-text"
+                  rows="6"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="row mt-1 mb-3">
+              <button
+                class="btn btn-primary user-contact-submit m-auto w-50"
+                type="submit"
+              >
+                Envoyez votre message
+              </button>
+            </div>
+
+            <p id="pFormCnil" class="user-contact-legacy">
+              En cliquant sur "Envoyez votre message", vous acceptez les
+              <span data-href="cgu" target="_blank">CGU</span> ainsi que notre
+              <span data-href="politique-confidentialite" target="_blank"
+                >politique de confidentialité</span
+              >
+              décrivant la finalité des traitements de vos données personnelles.
+            </p>
+
+            <input
+              type="hidden"
+              name="recaptcha_response"
+              id="recaptchaResponse"
+              value="03ADUVZwB7DhKqgCMla4bQnOOlDvvhTVJ-5GErg4X50MACzciB9sPZyz-0h8yaCp_kizUt4AcM0AoviYCKih2ibLIK50_F8p079AtuhVLfbuaivrFQHPlpJgFJskwwIVrxkOmIkK1f6-SW6ZcBfF5eQ8kw9bmw0PJQdULkN5GqEPZM6C1TRS8UHpmBW_uJ3dle3dF5jQ90enVGRWcNPObyyVgtiddDCBJO-rr6UU6woRGu24dYh1FqToGrXHfPOUidIhazmYrC1NcjicuokKFMBKwkKf29eB6pT7inRa3GQuuhjnyrBmTo40BUzRY1yIRBPc-Ou1Gu_-F5toSQSZ8ZMVGYNSHk9olVNNg__tyrj7JQtYcCl_CBiHOa4AVu9RYjyHWUhhur8o9T0zZRq_nAJJsOf57ZMuvtfkC6UuZck0IyYO7ttotJ7qNODkm2rxdjAYlzxVJo4wmkDMbfxF6eU6eBfh1RIcXMgLZMTxP8Rven4NnZI2nOFt3H7xZpWnrho3e1-AY2wUF8l20UBZP9iZ7BzQ76aLTozVYjQYOQZ6jLpP3sYBodckg"
+            />
+
+            <input
+              type="hidden"
+              id="user_form_country"
+              name="user_form[country]"
+              value="FR"
+            /><input
+              type="hidden"
+              id="user_form__token"
+              name="user_form[_token]"
+              value="cab56c64de2112d.juibTs2-4ahKqIC_cCWxhBD6yi9OCO4THbsEZrx_ErU.5L_DHJzO0sU6-LHYFRDA43G0m3whPIhHSPBpBOlNUfHUpPR3ktTY3j_OsA"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

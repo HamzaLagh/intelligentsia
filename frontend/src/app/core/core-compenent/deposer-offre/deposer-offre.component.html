@@ -1,0 +1,93 @@
+<app-top-header></app-top-header>
+<div  style="top:50px;position: fixed; display:block;width:100%">
+  <app-header-entreprise></app-header-entreprise>
+</div>
+
+<!-- -------------------Déposer un offre CONTAINER----------- -->
+
+<div [formGroup]="form" class="col-8 mx-auto ">
+    <div id="container" class="form-container mx-auto contDeposer py-4  px-5 " style="margin-top:150px;width:70%;">
+      <form class="row g-3 registration-form  ">
+        <div class="col-12">
+          <h5 class="mb-5 Déposer mx-auto w-25 text-center">Déposer un offre :</h5>
+        </div>
+    
+        <div class="col-4">
+          <label for="nom">Titre :</label>
+          <input formControlName="titre" id="nom" type="text" class="form-control" placeholder="Titre...">
+        </div>
+        <div class="col-4">
+          <label for="nom">Nombre de Poste :</label>
+          <input formControlName="nbrePoste" type="number" class="form-control" placeholder="Nombre de Poste...">
+        </div>
+        <div class="col-4">
+            <label for="nom">Date Limite :</label>
+            <input formControlName="dateLimite" type="date" class="form-control" placeholder="Date Limite...">
+          </div>
+        <div class="col-6">
+          <label for="nom">Secteur d'activité :</label>
+          <select formControlName="secteur" class="form-select" name="" id="">
+            <option value="Secteur1">Choisir </option>
+            <option value="Secteur1">Informatique</option>
+            <option value="Secteur1"></option>
+        </select>
+        </div>
+        <div class="col-6">
+          <label for="nom">Niveau d'étude :</label>
+          <select formControlName="niveauEtude" class="form-select" name="" id="">
+            <option value="Secteur1">Choisir </option>
+            <option value="Secteur2">Bac</option>
+            <option value="Secteur3">Licience</option>
+        </select>
+        </div>
+        <div class="col-6">
+          <label for="nom">Type de contrat :</label>
+          <select formControlName="typeContrat" class="form-select" name="" id="">
+            <option value="CDD">CDD </option>
+            <option value="CDI">CDI</option>
+            <option value="Stage">Stage</option>
+        </select>
+        </div>
+        <div class="col-6">
+          <label for="nom">Type de travail :</label>
+          <select formControlName="typeTravail" class="form-select" name="" id="">
+            <option value="Secteur1">Choisir </option>
+            <option value="à distance">à distance</option>
+            <option value="présentiel">présentiel</option>
+        </select>
+        </div>
+       
+        <div class="col-6">
+          <label for="nom">Region :</label>
+          <select formControlName="region" class="form-select" name="" id="">
+            <option value="Secteur1">Choisir </option>
+            <option value="Rabat">Rabat</option>
+            <option value="Kénitra">Kénitra</option>
+        </select>
+        </div>
+        <div class="col-6">
+          <label for="nom">Softkills :</label>
+          <select formControlName="softkills" class="form-select" name="" id="">
+            <option value="Secteur1">Choisir </option>
+            <option value="Secteur2">Exemple1</option>
+            <option value="Secteur">Exemple2</option>
+        </select>
+        </div>     
+        <div class="col-4">
+            <label for="nom">Avantage :</label>
+            <input formControlName="avantage" type="text" class="form-control" placeholder="Avantage...">
+          </div>
+        <div class="col-8">
+            <label for="nom">Déscription :</label>
+            <textarea formControlName="description" class="form-control" placeholder="Déscription..."></textarea>
+          </div>
+
+        <div class="col-12 text-center">
+          <button (click)="onSubmit()" type="submit" class="btn btnRegister w-25 mt-4" >Déposer</button>
+        </div>
+      
+    </form>
+  
+   </div>
+  </div>
+<app-footer></app-footer>

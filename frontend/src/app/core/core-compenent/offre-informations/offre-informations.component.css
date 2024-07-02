@@ -1,0 +1,40 @@
+
+label{
+    font-size: small;
+    font-weight: 600;
+}
+.contDemandes{
+    margin-top: 180px;
+    height: 900px;
+    margin-bottom: 200px;
+}
+.contDemandes .contPetit
+{
+    cursor: pointer;
+    background-color:#adadad20;
+    box-shadow: 0px 0px 6px 0px gray;
+    height: 350px;
+
+}
+.contDemandes .contPetit h6{
+    border-radius: 5px;
+    font-size: small;
+}
+
+.imgProfil img
+{
+    width: 180px;
+    height:180px;
+    /* border: 1px solid gray; */
+}
+.contDemandes h6 a 
+{
+    font-size: smaller;
+    text-decoration: none;
+    color: black;
+}
+.contDemandes h6 a:hover 
+{
+    text-decoration: underline rgb(36, 118, 207);
+    color: rgb(64, 59, 59);
+}

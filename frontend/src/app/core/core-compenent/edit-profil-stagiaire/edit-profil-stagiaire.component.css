@@ -1,0 +1,58 @@
+ 
+.container{
+   height: auto;
+   margin-top: 200px;
+   margin-bottom: 80px;
+   /* font-size: small; */
+
+}
+form .row .col .form-group{
+    margin-bottom: 20px;
+}
+
+.user-box
+{
+    background-color:  white;
+    /* border: 1px solid black; */
+    /* margin-left: 30px; */
+
+}
+label{
+   font-weight: 500;
+   /* margin-left: 10px; */
+   
+}
+.user-box input
+{
+    font-size: 14px;
+    background-color: transparent;
+    outline: none;
+	border:none;
+	width: 60%;
+    height: 15px;
+    padding: 18px 15px;
+    background-color:  rgb(243, 242, 241);;
+
+
+
+}
+.user-box i{
+    margin-right: 5px;
+   line-height: 40px;
+}
+
+
+.contLink a {
+   color: rgb(74, 72, 72);
+   text-decoration:none ;
+}
+.contLink a:hover {
+   color: black;
+   text-decoration: underline;
+}
+
+.form-group .input-group-addon{
+   width: 20%;
+   padding-top:8px;
+}
+ 

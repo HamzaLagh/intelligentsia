@@ -1,0 +1,108 @@
+<app-top-header></app-top-header>
+<div style="top: 50px; position: fixed; display: block; width: 100%;z-index:150;">
+  <app-header></app-header>
+</div>
+<div class=" mx-auto contOffre">
+  <img class="imgOffre" [src]="coverTravail" width="100%" height="100%" />
+  
+
+  <div class="container contGrand mt-3 p-5 w-100">
+    <!-- <h3 class="text-center">RECHERCHER UN EMPLOI</h3> -->
+    <form class="d-flex mb-0">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Quel poste recherchez-vous ?"
+        aria-label="Search"
+        style="color: white;"
+      />
+      <button class="btn" style="background-color: #0099DD;color: white;" type="submit">Rechercher</button>
+    </form>
+    <div class="container contFilter w-100">
+      <input type="text" class="btn mx-4 my-3" placeholder="Mots-clé" id="" />
+      <select class="form-select m-3" aria-label="Default select example">
+        <option selected>Region</option>
+        <option value="1">Rabat</option>
+        <option value="2">Casablanca</option>
+        <option value="3">Salé</option>
+        <option value="3">Tanger</option>
+        <option value="3">Tetouan</option>
+        <option value="3">Safi</option>
+      </select>
+      <select class="form-select m-3" aria-label="Default select example">
+        <option selected>Secteur</option>
+        <option value="1">Agroalimentaire</option>
+        <option value="2">Banque / Assurance</option>
+        <option value="3">BTP / Matériaux de construction</option>
+        <option value="1">Industrie pharmaceutique</option>
+        <option value="1">Informatique / Télécoms</option>
+        <option value="1">Métallurgie / Travail du métal</option>
+        <option value="1">Transports / Logistique</option>
+        <option value="1">Machines et équipements / Automobile</option>
+        <option value="1">Plastique / Caoutchouc</option>
+        <option value="1">Textile / Habillement / Chaussure</option>
+        <option value="1">Études et conseils</option>
+        <option value="1">Chimie / Parachimie</option>
+      </select>
+      <select class="form-select m-3" aria-label="Default select example">
+        <option selected>Expérience</option>
+        <option value="1">Débutant</option>
+        <option value="2">Moins de 1 an</option>
+        <option value="3">De 1 à 3 ans</option>
+        <option value="3">De 3 à 5 ans</option>
+        <option value="3">De 5 à 10 ans</option>
+        <option value="3">De 10 à 20 ans</option>
+        <option value="3">Plus de 20 ans</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="contLink">
+  <a class="" href="/accueil">Accueil</a> ›<a class="" href="/offres">
+    Liste des offres d'emploi</a
+  >
+</div>
+<div class="container text-center my-5">
+  <h3>Les offres d'emploi trouvées :</h3>
+</div>
+
+<!-- ------------les offres trouvées--- -->
+<div class="container w-75 py-2" *ngFor="let n of fakeArray">
+  <div class="container w-100 contDemandes">
+    <a class="text-dark text-decoration-none" href="/OffreInformations">
+      <div class="row w-75 mx-auto p-5 contPetit">
+        <div class="col-2">
+          <div class="imgProfil mx-auto">
+            <img [src]="logoEntreprise" />
+          </div>
+          <h6><a href="">Ramaqs</a></h6>
+        </div>
+
+        <div class="col ps-4">
+          <h5>TECHNICIEN EN INFRASTRUCTURE DIGITALE</h5>
+          <h6>Ramaqs</h6>
+          <p>description...</p>
+        </div>
+        <div class="col-2 w-25">
+          <h4>
+            <i class="fa fa-map-marker" aria-hidden="true"> Casablanca</i>
+          </h4>
+          <h6>6 Mois</h6>
+          <p>à partir du 01/06/2023</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<div class="w-25 mx-auto my-5 mt-4">
+  <ul class="pagination mx-auto">
+    <li class="page-item ms-5"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</div>
+<app-footer></app-footer>

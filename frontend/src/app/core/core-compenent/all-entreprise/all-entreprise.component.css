@@ -1,0 +1,386 @@
+
+/* body {
+    line-height: 1.2;
+} */
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+
+
+
+
+
+@media (min-width: 992px)
+{.col-lg-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}}
+.chosen-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float: left;
+    width: 100% !important;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: none !important;
+    border: 2px solid #e8ecec;
+}
+.chosen-container-single .chosen-single {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    height: 61px !important;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #888888;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 24px;
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    padding: 14px 45px 14px 15px;
+    height: auto;
+}
+.chosen-container a {
+    cursor: pointer;
+}
+.chosen-container * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.chosen-container-single .chosen-single span {
+    display: block;
+    overflow: hidden;
+    margin-right: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    margin-left: 12px;
+}
+.chosen-container * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+* {
+    outline: none !important;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+div {
+    display: block;
+}
+
+.h1h2title {
+    color: #6ebdfd !important;
+    padding: 5px 0px !important;
+    margin: 0 !important;
+    background-color: #fff !important;
+    border-radius: 5px !important;
+    font-size: 19px !important;
+    line-height: 20px !important;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width: 992px)
+{.col-lg-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}}
+/* @media (min-width: 768px)
+{.col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}}
+@media (min-width: 576px)
+{.col-sm-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}} */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 992px)
+{.col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}}
+/* @media (min-width: 768px){
+.col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+}
+@media (min-width: 576px)
+{.col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}} */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+
+.minisite .emply-list.box {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+
+.emply-list.box .emply-list-thumb {
+    float: left;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.minisite .emply-list-thumb {
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    border-bottom: 1px solid #eee;
+    height: 250px;
+}
+header, .res-openmenu, .res-closemenu, .responsivemenu > ul > li.menu-item-has-children > a, .responsivemenu > ul > li ul > li a, .menu-sec nav > ul > li, .menu-sec nav > ul > li *, .chosen-container, .responsivemenu > ul > li.menu-item-has-children > a::before, .responsivemenu > ul > li.menu-item-has-children > a::after, .contact-textinfo > a.fill, .contact-textinfo > a, .chosen-container *, .emply-resume-list, .p-category, .p-category *, .job-listing, .job-listing *, .my-blog, .my-blog *, .link_widgets, .link_widgets *, .link_widgets a:before, .quick-select, .quick-select *, .top-compnay, .top-compnay *, .team, .team *, .sb-title::after, .sb-title::before, .sb-title, .emply-list, .emply-list *, .mportolio a, .profile-sidebar, .post-job-btn, .account-popup > form button, .login-social a, .job-search form button, .or-browser > a, .scroll-to, .scroll-to *, .browse-all-cat a, .simple-text-block a, .social *, .job-grid, .job-grid *, .top-compnay *, .subscription-sec form button, .social-links, .social-links *, .links a, .find-cand form > button, .download-text ul *, .team-detail *, header.style4 .account-btns > li a, .tab-sec, .tab-sec *, .subscribe_widget form button, .who-am, .who-am *, #toggle-widget h2::before, .emlthis, .emlthis *, .pagination, .pagination *, .apply-thisjob, .apply-alternative a, .share-bar *, .quick-form-job form button, .alpha-pag *, .emply-text > ul > li *, .emply-text > ul > li:before, .job-single-head.style2 > a, .job-overview ul > li *, .emply-btns > a, .upload-info > a, .profile-form-edit > form button, .contact-edit .srch-lctn, .contact-edit > form button, .action_job *, .table-list-title *, .tree_widget-sec > ul > li > ul *, .contact-popup form > button, .change-password form button, .shortlists > a, .action-inner .download-cv a, .follow-companies > ul li .job-listing.wtabs .go-unfollow, .border-title > a, .border-title > a *, .resumeadd-form button, .coverletter-sec > form button, .blogpost, .blogpost *, .tags_widget > a, .sidebar-links a, .sidebar-links a i, .mb-info > h3, .post-hist *, .commentform-sec > form button, .service *, .contact-form > form button, .error-sec form button, .error-sec h6 a, .menu-sec, .top-company-sec button.slick-arrow, .top-company-sec button.slick-arrow:before, .how-to-sec, .how-to-sec *, .responsivemenu li, .responsivemenu {
+    -webkit-transition: all .4s ease 0;
+    -moz-transition: all .4s ease 0;
+    -ms-transition: all .4s ease 0;
+    -o-transition: all .4s ease 0;
+    transition: all .4s ease 0;
+}
+.emply-list-thumb {
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
+}
+
+.minisite .emply-list.box .emply-list-thumb a {
+    position: relative;
+    bottom: -75px;
+    /* border: 1px solid #eee; */
+    /* background: #fff; */
+    border-radius: 5px;
+    width: 160px;
+}
+.emply-list.box .emply-list-thumb a {
+    float: none;
+    display: inline-block;
+}
+.emply-list-thumb > a {
+    float: left;
+    width: 100%;
+}
+header, .res-openmenu, .res-closemenu, .responsivemenu > ul > li.menu-item-has-children > a, .responsivemenu > ul > li ul > li a, .menu-sec nav > ul > li, .menu-sec nav > ul > li *, .chosen-container, .responsivemenu > ul > li.menu-item-has-children > a::before, .responsivemenu > ul > li.menu-item-has-children > a::after, .contact-textinfo > a.fill, .contact-textinfo > a, .chosen-container *, .emply-resume-list, .p-category, .p-category *, .job-listing, .job-listing *, .my-blog, .my-blog *, .link_widgets, .link_widgets *, .link_widgets a:before, .quick-select, .quick-select *, .top-compnay, .top-compnay *, .team, .team *, .sb-title::after, .sb-title::before, .sb-title, .emply-list, .emply-list *, .mportolio a, .profile-sidebar, .post-job-btn, .account-popup > form button, .login-social a, .job-search form button, .or-browser > a, .scroll-to, .scroll-to *, .browse-all-cat a, .simple-text-block a, .social *, .job-grid, .job-grid *, .top-compnay *, .subscription-sec form button, .social-links, .social-links *, .links a, .find-cand form > button, .download-text ul *, .team-detail *, header.style4 .account-btns > li a, .tab-sec, .tab-sec *, .subscribe_widget form button, .who-am, .who-am *, #toggle-widget h2::before, .emlthis, .emlthis *, .pagination, .pagination *, .apply-thisjob, .apply-alternative a, .share-bar *, .quick-form-job form button, .alpha-pag *, .emply-text > ul > li *, .emply-text > ul > li:before, .job-single-head.style2 > a, .job-overview ul > li *, .emply-btns > a, .upload-info > a, .profile-form-edit > form button, .contact-edit .srch-lctn, .contact-edit > form button, .action_job *, .table-list-title *, .tree_widget-sec > ul > li > ul *, .contact-popup form > button, .change-password form button, .shortlists > a, .action-inner .download-cv a, .follow-companies > ul li .job-listing.wtabs .go-unfollow, .border-title > a, .border-title > a *, .resumeadd-form button, .coverletter-sec > form button, .blogpost, .blogpost *, .tags_widget > a, .sidebar-links a, .sidebar-links a i, .mb-info > h3, .post-hist *, .commentform-sec > form button, .service *, .contact-form > form button, .error-sec form button, .error-sec h6 a, .menu-sec, .top-company-sec button.slick-arrow, .top-company-sec button.slick-arrow:before, .how-to-sec, .how-to-sec *, .responsivemenu li, .responsivemenu {
+    -webkit-transition: all .4s ease 0;
+    -moz-transition: all .4s ease 0;
+    -ms-transition: all .4s ease 0;
+    -o-transition: all .4s ease 0;
+    transition: all .4s ease 0;
+}
+a, a:hover, a:focus {
+    color: inherit;
+}
+button, a, input[type="submit"], input[type="button"] {
+    cursor: pointer;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+a {
+    text-decoration: none;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+* {
+    outline: none !important;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.emply-list.box {
+    border: 2px solid #e6e7ef;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    width: 106px;
+    height: 68px;
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+}
+
+.emply-list.box:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    border-color: #2d7bd4
+}
+
+.emply-list.box .emply-pstn {
+    position: absolute;
+    right: 240px;
+    top: 5px;
+    background-color: #4595f6;
+    padding: 1px 6px;
+    border-radius: 5px;
+    color: #fff;
+}
+.emply-pstn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #8b91dd;
+    font-size: 13px;
+}
+.emply-list.box .emply-list-thumb a img {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    padding: 20px 20px 0;
+    padding: 5px;
+}
+
+.minisite .emply-list-thumb > a img {
+    width: 100%;
+}
+.emply-list-thumb > a img {
+    width: 90px;
+    padding: 0 !important;
+    margin-top: 4px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+/* header, .res-openmenu, .res-closemenu, .responsivemenu > ul > li.menu-item-has-children > a, .responsivemenu > ul > li ul > li a, .menu-sec nav > ul > li, .menu-sec nav > ul > li *, .chosen-container, .responsivemenu > ul > li.menu-item-has-children > a::before, .responsivemenu > ul > li.menu-item-has-children > a::after, .contact-textinfo > a.fill, .contact-textinfo > a, .chosen-container *, .emply-resume-list, .p-category, .p-category *, .job-listing, .job-listing *, .my-blog, .my-blog *, .link_widgets, .link_widgets *, .link_widgets a:before, .quick-select, .quick-select *, .top-compnay, .top-compnay *, .team, .team *, .sb-title::after, .sb-title::before, .sb-title, .emply-list, .emply-list *, .mportolio a, .profile-sidebar, .post-job-btn, .account-popup > form button, .login-social a, .job-search form button, .or-browser > a, .scroll-to, .scroll-to *, .browse-all-cat a, .simple-text-block a, .social *, .job-grid, .job-grid *, .top-compnay *, .subscription-sec form button, .social-links, .social-links *, .links a, .find-cand form > button, .download-text ul *, .team-detail *, header.style4 .account-btns > li a, .tab-sec, .tab-sec *, .subscribe_widget form button, .who-am, .who-am *, #toggle-widget h2::before, .emlthis, .emlthis *, .pagination, .pagination *, .apply-thisjob, .apply-alternative a, .share-bar *, .quick-form-job form button, .alpha-pag *, .emply-text > ul > li *, .emply-text > ul > li:before, .job-single-head.style2 > a, .job-overview ul > li *, .emply-btns > a, .upload-info > a, .profile-form-edit > form button, .contact-edit .srch-lctn, .contact-edit > form button, .action_job *, .table-list-title *, .tree_widget-sec > ul > li > ul *, .contact-popup form > button, .change-password form button, .shortlists > a, .action-inner .download-cv a, .follow-companies > ul li .job-listing.wtabs .go-unfollow, .border-title > a, .border-title > a *, .resumeadd-form button, .coverletter-sec > form button, .blogpost, .blogpost *, .tags_widget > a, .sidebar-links a, .sidebar-links a i, .mb-info > h3, .post-hist *, .commentform-sec > form button, .service *, .contact-form > form button, .error-sec form button, .error-sec h6 a, .menu-sec, .top-company-sec button.slick-arrow, .top-company-sec button.slick-arrow:before, .how-to-sec, .how-to-sec *, .responsivemenu li, .responsivemenu {
+    -webkit-transition: all .4s ease 0;
+    -moz-transition: all .4s ease 0;
+    -ms-transition: all .4s ease 0;
+    -o-transition: all .4s ease 0;
+    transition: all .4s ease 0;
+} */
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+@media (min-width: 992px)
+{.col-lg-4 {
+-webkit-box-flex: 0;
+-ms-flex: 0 0 33.333333%;
+flex: 0 0 33.333333%;
+max-width: 33.333333%;
+}}
+
+@media (min-width: 768px)
+{.col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}}
+/* @media (min-width: 576px)
+{.col-sm-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}} */
+
+@media (min-width: 992px)
+{.col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}}
+/* @media (min-width: 768px)
+{.col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}}
+@media (min-width: 576px)
+{.col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}} */
+
+

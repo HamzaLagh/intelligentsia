@@ -1,0 +1,46 @@
+ <div  style="top:0px;position: fixed; display:block;width:100%">
+        <app-header></app-header>
+    </div>
+    <div class="container    divGrand" style="margin-top:150px; display:block">
+        <div class="row row1">
+            <div class="col colImg">
+                <img class="img-fluid my-auto mx-auto my-5" src="../../../../assets/images/vectorLogin.png" width="350px" alt="" srcset="">
+            </div>
+            <div class="col  loginForm  bg-light">
+                <div class="col mx-auto   w-50 mt-5">
+                    <img class="img-logo mx-auto ms-3" src="../../../../assets/images/logo.png" width="160px" alt="">
+                </div>
+                <div [formGroup]="form" class="container w-75 mx-auto mt-5 " >
+
+                    <div class="input-group mx-auto   w-100 user-box mb-1">
+                        <i class="fa fa-user fa-lg "></i>
+                        <input formControlName="email" id="email" type="mail" class="" placeholder="Email"  />
+
+                    </div>
+                    <!-- <p id="result"></p>  -->
+                    <div class="input-group mx-auto  w-100 user-box mb-4">
+                        <i class="fa fa-lock fa-lg "></i>
+                        <input  formControlName="password" id="mdps" type="password" placeholder="Mot de pass" />
+                    </div>
+                </div>
+                <div class="mx-auto  w-50 mb-4  ">
+                    <button (click)="goToRegister()" type="submit" class="btn w-75 ms-3 btnLogin">Connexion</button>
+                </div>
+
+                <div id="incorrect" class="col-12  w-100 mx-auto mb-1 text-center" style="color:red;display: none;">
+                    <p>Mot de pass ou email invalid!</p>
+                </div>
+
+                <div class="row  w-100 mx-auto mb-1" style="color:blue;">
+                    <div class="col mx-auto text-center">
+                        <a routerLink="/password" class="text-decoration-none active  w-25">Mot de passe oublié?</a>
+                    </div>
+                    <div class="col-6 w-100 text-center mt-1 ">
+                        Pas encore inscrit? <a routerLink="/general"  class="text-decoration-none w-100"> Inscrivez-vous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+

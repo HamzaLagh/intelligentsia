@@ -1,0 +1,30 @@
+server:
+  port: 9001
+  #host: 192.168.11.114
+spring:
+  application:
+    name: apiSecurity
+  datasource:
+    url: jdbc:mysql://localhost:3306/intelligentsia?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezonShif=trueLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: 132580
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  # Mail configuration
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: malidoniso1@gmail.com
+    password: pmnpfrmnxrznxbnq
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+file:
+  upload-dir: /home/camara/intelligentsia/IntelligentsiaCV
+  upload-dir1: /home/camara/intelligentsia/intelligensiaImage
+stripe:
+  secret:
+    key:
